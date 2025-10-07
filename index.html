@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shop</title>
+    <style>
+      /* ========== STYLE DASAR ========== */
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+      }
+
+      /* ========== HEADER ========== */
+      header {
+        background: linear-gradient(90deg, #ff4b91, #ff8fab);
+        color: white;
+        text-align: center;
+        padding: 30px 0;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      /* ========== LAYOUT WRAPPER ========== */
+      .wrapper {
+        display: flex;
+        min-height: 70vh;
+        max-width: 1200px;
+        margin: 30px auto;
+        gap: 20px;
+        padding: 0 20px;
+      }
+
+      /* ========== MENU KIRI ========== */
+      nav {
+        flex: 0 0 220px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      nav h3 {
+        text-align: center;
+        color: #ff4b91;
+        margin-bottom: 20px;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin: 15px 0;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #444;
+        font-weight: bold;
+        font-size: 15px;
+        transition: 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #ff4b91;
+        padding-left: 5px;
+      }
+
+      /* ========== KONTEN ========== */
+      main {
+        flex: 1;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      main h2 {
+        color: #ff4b91;
+        margin-bottom: 10px;
+      }
+
+      main p {
+        color: #666;
+        line-height: 1.7;
+      }
+
+      main img {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 15px;
+      }
+
+      /* ========== FOOTER ========== */
+      footer {
+        background: linear-gradient(90deg, #ff4b91, #ff8fab);
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      /* ========== RESPONSIVE ========== */
+      @media (max-width: 768px) {
+        .wrapper {
+          flex-direction: column;
+          padding: 10px;
+        }
+
+        nav {
+          width: 100%;
+          text-align: center;
+        }
+
+        nav ul li {
+          display: inline-block;
+          margin: 10px;
+        }
+
+        main {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>🌸 Online Shop 🌸</header>
+
+    <div class="wrapper">
+      <nav>
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="member.html">Member</a></li>
+          <li><a href="registrasi.html">Registrasi</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <h2>Selamat Datang di Online Shop Kami!</h2>
+        <p>
+          Temukan berbagai produk pilihan dengan harga terbaik. Kami menyediakan
+          kebutuhan Anda mulai dari fashion, elektronik, hingga perlengkapan
+          rumah tangga. Nikmati pengalaman belanja online yang cepat, aman, dan
+          nyaman.
+        </p>
+        <p>
+          Klik menu <strong>Produk</strong> untuk melihat koleksi terbaru kami,
+          atau <strong>Registrasi</strong> untuk bergabung menjadi member dan
+          dapatkan penawaran eksklusif!
+        </p>
+        <img src="Aset/Gambar/Screenshot (151).png" alt="Banner Promo" />
+        <p><strong>Promo Spesial:</strong> Diskon hingga 50% minggu ini 🎉</p>
+      </main>
+    </div>
+
+    <footer>&copy; 2025 Online Shop - All Rights Reserved</footer>
+  </body>
+</html>

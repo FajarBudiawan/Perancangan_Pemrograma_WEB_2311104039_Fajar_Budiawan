@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelola Produk - Admin</title>
+  </head>
+  <body>
+    <h2>🛍️ Kelola Produk</h2>
+
+    <form>
+      <label>Nama Produk</label><br />
+      <input type="text" size="40" /><br /><br />
+
+      <label>Harga</label><br />
+      <input type="number" /><br /><br />
+
+      <label>Deskripsi</label><br />
+      <textarea rows="3" cols="40"></textarea><br /><br />
+
+      <label>Gambar Produk</label><br />
+      <input type="file" /><br /><br />
+
+      <button type="submit">Tambah Produk</button>
+    </form>
+
+    <br /><br />
+    <h3>📦 Daftar Produk</h3>
+    <table border="1" width="100%" cellspacing="0" cellpadding="8">
+      <tr style="background: #5146d9; color: white">
+        <th>No</th>
+        <th>Nama Produk</th>
+        <th>Harga</th>
+        <th>Aksi</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Tas Fashion</td>
+        <td>Rp 150.000</td>
+        <td><button>Edit</button> <button>Hapus</button></td>
+      </tr>
+    </table>
+  </body>
+</html>

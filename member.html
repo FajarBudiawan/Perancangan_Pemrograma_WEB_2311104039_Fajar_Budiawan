@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Member - Online Shop</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      /* ===== HEADER ===== */
+      #header {
+        background: linear-gradient(90deg, #ff4b91, #ff8fab);
+        color: white;
+        text-align: center;
+        padding: 25px 0;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      /* ===== STRUKTUR UTAMA ===== */
+      #main {
+        display: flex;
+        min-height: 80vh;
+      }
+
+      /* ===== SIDEBAR MENU ===== */
+      #menu {
+        width: 220px;
+        background: #ffffff;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+      }
+
+      #menu a {
+        display: block;
+        width: 80%;
+        text-align: center;
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 8px 0;
+        padding: 10px;
+        border-radius: 6px;
+        transition: 0.3s;
+      }
+
+      #menu a:hover {
+        background: #ff4b91;
+        color: white;
+      }
+
+      /* ===== KONTEN ===== */
+      #content {
+        flex: 1;
+        background: #ffffff;
+        padding: 30px;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      form {
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #fff3f8;
+        border-radius: 10px;
+        border: 1px solid #ffc0cb;
+      }
+
+      form h3 {
+        color: #ff4b91;
+        text-align: center;
+      }
+
+      form input {
+        width: 95%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      form button {
+        background: #ff4b91;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      form button:hover {
+        background: #ff8fab;
+      }
+
+      h2 {
+        color: #ff4b91;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #ff4b91;
+        color: white;
+      }
+
+      /* ===== FOOTER ===== */
+      #footer {
+        background: linear-gradient(90deg, #ff4b91, #ff8fab);
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 768px) {
+        #main {
+          flex-direction: column;
+        }
+        #menu {
+          width: 100%;
+          flex-direction: row;
+          justify-content: center;
+        }
+        #menu a {
+          width: auto;
+          margin: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">🌸 Daftar Member 🌸</div>
+
+    <div id="main">
+      <div id="menu">
+        <a href="index.html">Beranda</a>
+        <a href="produk.html">Produk</a>
+        <a href="member.html">Member</a>
+        <a href="registrasi.html">Registrasi</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+
+      <div id="content">
+        <form>
+          <h3>Tambah Member Baru</h3>
+          <label>Nama Member</label><br />
+          <input
+            type="text"
+            name="nama"
+            placeholder="Masukkan nama member"
+            required
+          /><br />
+          <label>Email</label><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="Masukkan email"
+            required
+          /><br />
+          <button type="submit">Tambah Member</button>
+        </form>
+
+        <h2>Member Aktif</h2>
+        <table>
+          <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>Tanggal Bergabung</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Ayu Wulandari</td>
+            <td>ayu@gmail.com</td>
+            <td>05-03-2025</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Rizky Saputra</td>
+            <td>rizky@gmail.com</td>
+            <td>14-04-2025</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Dewi Lestari</td>
+            <td>dewi@gmail.com</td>
+            <td>01-06-2025</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="footer">&copy; 2025 Online Shop - All Rights Reserved</div>
+  </body>
+</html>
